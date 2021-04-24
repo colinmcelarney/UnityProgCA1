@@ -7,15 +7,18 @@ public class HudManager : MonoBehaviour
 {
 
     //Score Labels
+    //public int ScoreCount;
     public Text scoreLabel;
-    public int ScoreCount;
+    public int ScoreCount = 10;
 
     //Public Game Objects
     public GameObject Enemy;
+    //public GameObject Well;
     // Start is called before the first frame update
     void Start()
     {
-        scoreLabel.text = "Score : " + ScoreCount;
+    scoreLabel.text = "Score : " + ScoreCount;
+        
     }
 
     // Update is called once per frame
@@ -23,7 +26,10 @@ public class HudManager : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            scoreLabel.text = "Score : " + ScoreCount++;
+            scoreLabel.text = "Score : " + ScoreCount--;
         }
     }
+
+    
+    
 }

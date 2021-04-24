@@ -6,6 +6,9 @@ public class CharMovement : MonoBehaviour
 {
     public float speed = 30; //speed of player when moving
     public float jumpPower = 8; //player can jump power of 4
+    
+
+    
 
     Rigidbody rb; //player is a rigid body
     CapsuleCollider col; //player is a collider
@@ -15,6 +18,8 @@ public class CharMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; 
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
+        
+
     }
 
     // Update is called once per frame
