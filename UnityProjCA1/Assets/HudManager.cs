@@ -10,26 +10,53 @@ public class HudManager : MonoBehaviour
     //public int ScoreCount;
     public Text scoreLabel;
     public int ScoreCount = 10;
+    public Text healthLabel;
+    public int HealthCount = 3;
+    public Text keyLabel;
+    public int KeyCount = 0;
 
     //Public Game Objects
     public GameObject Enemy;
+    public GameObject Player;
+    public GameObject Well;
+    public GameObject Key;
+
     //public GameObject Well;
     // Start is called before the first frame update
     void Start()
     {
     scoreLabel.text = "Score : " + ScoreCount;
+    healthLabel.text = "Health : " + HealthCount;
+    keyLabel.text = "Key : " + KeyCount;
+
         
     }
 
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
-        {
-            scoreLabel.text = "Score : " + ScoreCount--;
-        }
-    }
+        //if(other.gameObject.tag == "Player")
+        //{
+        //    scoreLabel.text = "Score : " + ScoreCount--;
+        //}
+    
 
+        if (other.gameObject.tag == "Enemy")
+        {
+            healthLabel.text = "Health : " + HealthCount--;
+        }
+
+        else if (other.gameObject.tag == "Well")
+        {
+            healthLabel.text = "Health : " + HealthCount++;
+        }
+
+        else if (other.gameObject.tag == "Key")
+        {
+            keyLabel.text = "Key : " + KeyCount++;
+        }
+
+    }
     
     
 }
