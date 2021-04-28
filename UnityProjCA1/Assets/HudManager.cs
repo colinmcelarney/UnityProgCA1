@@ -9,14 +9,15 @@ public class HudManager : MonoBehaviour
     
     public Text healthLabel;
     public int HealthCount = 3;
-    public Text keyLabel;
-    public int KeyCount = 0;
+    //public Text keyLabel;
+    //public int KeyCount = 0;
 
     //Public Game Objects
     public GameObject Enemy;
     public GameObject Player;
     public GameObject Well;
-    public GameObject Key;
+    //public GameObject Key;
+    public GameObject door;
 
     //public GameObject Well;
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class HudManager : MonoBehaviour
     {
     //scoreLabel.text = "Score : " + ScoreCount;
     healthLabel.text = "Health : " + HealthCount;
-    keyLabel.text = "Key : " + KeyCount;
+    //keyLabel.text = "Key : " + KeyCount;
     //ApplyDamage(0);
 
         
@@ -61,9 +62,13 @@ public class HudManager : MonoBehaviour
 
         else if (other.gameObject.tag == "Key")
         {
-            keyLabel.text = "Key : " + KeyCount++;
+           // keyLabel.text = "Key : " + KeyCount++;
+            //gameObject.SetActive(false);
+            door.transform.position += new Vector3(0, 0, 100);
+        
         }
 
+        
     }
     
     
