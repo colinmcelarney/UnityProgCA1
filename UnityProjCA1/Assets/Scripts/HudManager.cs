@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HudManager : MonoBehaviour
 {
@@ -38,6 +39,11 @@ public class HudManager : MonoBehaviour
         {
             healthLabel.text = "Health :" + HealthCount--;
             
+        }
+
+        if (HealthCount <= 0)
+        {
+            SceneManager.LoadScene ("Explain");
         }
     }
 
