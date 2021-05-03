@@ -7,6 +7,7 @@ public class CharMovement : MonoBehaviour
     //public CharacterController controller;
     public float speed = 8f; //speed of player when moving
     public float jumpPower = 8f; //player can jump power of 4
+    Animator animator;
     
 
     
@@ -19,6 +20,7 @@ public class CharMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; 
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
+        animator = GetComponent<Animator>();
         
 
     }
@@ -32,6 +34,12 @@ public class CharMovement : MonoBehaviour
             Vertical *= Time.deltaTime;
             //Vector3 direction = new Vector3(Horizontal, 0f, Vertical).normalized * Time.deltaTime;
             transform.Translate(Horizontal, 0, Vertical);
+
+
+            //if (Input.GetKeyDown (KeyCode."w"))
+            //{
+             //   animator.SetBool("isWalking", true);
+            //}
 
             if (isGrounded() && Input.GetKeyDown (KeyCode.Space))
             {
