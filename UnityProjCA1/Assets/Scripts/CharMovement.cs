@@ -7,10 +7,9 @@ public class CharMovement : MonoBehaviour
     //public CharacterController controller;
     public float speed = 8f; //speed of player when moving
     public float jumpPower = 8f; //player can jump power of 4
+    public float RotateSpeed = 25F;
     Animator animator;
-    
 
-    
 
     Rigidbody rb; //player is a rigid body
     CapsuleCollider col; //player is a collider
@@ -34,6 +33,7 @@ public class CharMovement : MonoBehaviour
             Vertical *= Time.deltaTime;
             //Vector3 direction = new Vector3(Horizontal, 0f, Vertical).normalized * Time.deltaTime;
             transform.Translate(Horizontal, 0, Vertical);
+            transform.Rotate(0, Horizontal * RotateSpeed, 0);
 
 
             //if (Input.GetKeyDown (KeyCode."w"))

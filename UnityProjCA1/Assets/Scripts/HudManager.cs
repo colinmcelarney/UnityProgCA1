@@ -11,7 +11,7 @@ public class HudManager : MonoBehaviour
     public Text healthLabel;
     public int HealthCount = 3;
 
-    public static bool GamePaused = false;
+    //public static bool GamePaused = false;
     //public Text keyLabel;
     //public int KeyCount = 0;
 
@@ -21,7 +21,7 @@ public class HudManager : MonoBehaviour
     public GameObject Well;
     //public GameObject Key;
     public GameObject door;
-    public GameObject pauseMenuUI;
+    //public GameObject pauseMenuUI;
 
     //public GameObject Well;
     // Start is called before the first frame update
@@ -82,43 +82,7 @@ public class HudManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("p"))
-        {
-            if (GamePaused)
-            {
-                Resume();
-            }
-
-            else
-            
-            {
-                Paused();
-            }
-        }
+        
     }
-
-public void Resume ()
-{
-    pauseMenuUI.SetActive(false);
-    Time.timeScale = 1f;
-    GamePaused = false;
-    //GetComponent<AudioSource>().Play();
-}
-
-void Paused ()
-{
-    pauseMenuUI.SetActive(true);
-    Time.timeScale = 0f;
-    GamePaused = true;
-    //GetComponent<AudioSource>().Pause();
-}
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("Explain");
-    }
-
-    public void Quit()
-    {
-        SceneManager.LoadScene("Intro");
-    }    
+       
 }

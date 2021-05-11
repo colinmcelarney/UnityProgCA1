@@ -5,6 +5,7 @@ using UnityEngine;
 public class animationcontroller : MonoBehaviour
 {
     Animator animator;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +24,7 @@ public class animationcontroller : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
+
+        
     }
 }
