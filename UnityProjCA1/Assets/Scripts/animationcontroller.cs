@@ -25,6 +25,11 @@ public class animationcontroller : MonoBehaviour
             animator.SetBool("isWalking", false);
         }
 
+        if (Input.GetKey("up"))
+        {
+            animator.SetBool("isWalking", true);
+        }
+
         
     }
 }

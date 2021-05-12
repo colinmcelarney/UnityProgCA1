@@ -8,7 +8,7 @@ public class CharMovement : MonoBehaviour
     public float speed = 8f; //speed of player when moving
     public float jumpPower = 8f; //player can jump power of 4
     public float RotateSpeed = 25F;
-    Animator animator;
+    //Animator animator;
 
 
     Rigidbody rb; //player is a rigid body
@@ -16,10 +16,10 @@ public class CharMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked; 
+        //Cursor.lockState = CursorLockMode.Locked; 
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         
 
     }
