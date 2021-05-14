@@ -9,7 +9,7 @@ public class HudManager : MonoBehaviour
 
     
     public Text healthLabel;
-    public int HealthCount = 3;
+    public int HealthCount = 50;
 
     //public static bool GamePaused = false;
     //public Text keyLabel;

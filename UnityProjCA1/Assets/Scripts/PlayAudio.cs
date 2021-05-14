@@ -4,10 +4,22 @@ using UnityEngine;
 
 public class PlayAudio : MonoBehaviour
 {
-    public AudioSource playAudio;
+    public AudioSource audioSource;
+    public bool alreadyPlayed = false;
+    
+    //public bool played = false;
 
-   void OnTriggerEnter(Collider other)
+//void Start()
+//{
+
+    //audio = GetComponent<AudioSource>();
+//}
+   void OnCollisionEnter(Collision collision)
+{
+   if (!alreadyPlayed)
    {
-       playAudio.Play();
+       audioSource.Play();
+       alreadyPlayed = true;
    }
+}
 }
