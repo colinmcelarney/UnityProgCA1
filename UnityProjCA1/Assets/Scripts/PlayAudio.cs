@@ -7,13 +7,7 @@ public class PlayAudio : MonoBehaviour
     public AudioSource audioSource;
     public bool alreadyPlayed = false;
     
-    //public bool played = false;
-
-//void Start()
-//{
-
-    //audio = GetComponent<AudioSource>();
-//}
+    
    void OnCollisionEnter(Collision collision)
 {
    if (!alreadyPlayed)
@@ -21,5 +15,6 @@ public class PlayAudio : MonoBehaviour
        audioSource.Play();
        alreadyPlayed = true;
    }
-}
+
+   }
 }

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 45b66ad09ab214b4d90de0769bdfda2e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Old English Text MT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 02acd246b1b78314588b7ad3a0c911b3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

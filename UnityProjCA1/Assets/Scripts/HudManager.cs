@@ -9,28 +9,24 @@ public class HudManager : MonoBehaviour
 
     
     public Text healthLabel;
-    public int HealthCount = 50;
+    public int HealthCount = 100;
 
-    //public static bool GamePaused = false;
-    //public Text keyLabel;
-    //public int KeyCount = 0;
+    public Text keyLabel;
+    public int KeyCount = 0;
 
     //Public Game Objects
     public GameObject Enemy;
     public GameObject Player;
     public GameObject Well;
-    //public GameObject Key;
+    public GameObject Key;
     public GameObject door;
-    //public GameObject pauseMenuUI;
+    
 
-    //public GameObject Well;
     // Start is called before the first frame update
     void Start()
     {
-    //scoreLabel.text = "Score : " + ScoreCount;
     healthLabel.text = "Health : " + HealthCount;
-    //keyLabel.text = "Key : " + KeyCount;
-    //ApplyDamage(0);
+    keyLabel.text = "Key : " + KeyCount;
 
         
     }
@@ -50,29 +46,24 @@ public class HudManager : MonoBehaviour
         }
     }
 
+    void ApplyHealth(int health)
+    {
+        healthLabel.text = "Health :" + HealthCount++;
+    }
+
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        //if(other.gameObject.tag == "Player")
-        //{
-        //    scoreLabel.text = "Score : " + ScoreCount--;
-        //}
-    
-
-       // if (other.gameObject.tag == "Enemy")
-        //{
-         //   healthLabel.text = "Health : " + HealthCount--;
-        //}
-
+       
         if (other.gameObject.tag == "Well")
         {
             healthLabel.text = "Health : " + HealthCount++;
+            
         }
 
         else if (other.gameObject.tag == "Key")
         {
-           // keyLabel.text = "Key : " + KeyCount++;
-            //gameObject.SetActive(false);
+            keyLabel.text = "Key : " + KeyCount+1;
             door.transform.position += new Vector3(0, 0, 100);
         
         }

@@ -399,9 +399,11 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\n\nWelcome to Wolfs Revenge. \n\nWolf has entered the Village to avenge
-    the death of his wife Sigrid. \n\nWolf has to find the three Killers in the Village.\n\nAfter
-    killing the three Killers he must find the key to his treasure that was stolen
-    from his family."
+    the death of his wife Sigrid. \n\nNavigate to the strange character and he will
+    explain what to do.\n\nWolf has to find the three Killers in the Village.\n\nAfter
+    killing the three Killers he must find the key to the door of the building that
+    his treasure is in.\n\nWhen Wolf gets close to the building the key will unlock
+    the door.\n\nFind the Treassure and Finish the Game.\n\n"
 --- !u!222 &948329036
 CanvasRenderer:
   m_ObjectHideFlags: 0
