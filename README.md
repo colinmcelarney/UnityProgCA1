@@ -34,3 +34,12 @@ https://assetstore.unity.com/packages/3d/props/exterior/the-village-well-115166
 
 Treasure Chest Free
 https://assetstore.unity.com/packages/3d/props/interior/treasure-set-free-chest-72345
+
+LowPoly Medieval Plaugue Doctor
+https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/lowpoly-medieval-plague-doctor-free-pack-176809
+
+Meshtint Free Knight
+https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/meshtint-free-knight-133286
+
+Outdoor Ground Textures
+https://assetstore.unity.com/packages/2d/textures-materials/floors/outdoor-ground-textures-12555
