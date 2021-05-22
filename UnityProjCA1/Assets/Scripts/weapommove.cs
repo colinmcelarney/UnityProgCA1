@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//This Script is attached to the weapon on the player.
+//When the Player fires the weapon/projectile it clones the item and destroys it after 8 seconds
 public class weapommove : MonoBehaviour
 {
 
@@ -12,7 +14,7 @@ public class weapommove : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             var clone = Instantiate(weapon, gameObject.transform.position, gameObject.transform.rotation);
-            Destroy(clone, 30.0f);
+            Destroy(clone, 8.0f);
         }
     }
 }

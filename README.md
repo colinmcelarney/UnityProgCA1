@@ -43,3 +43,13 @@ https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/meshtint-f
 
 Outdoor Ground Textures
 https://assetstore.unity.com/packages/2d/textures-materials/floors/outdoor-ground-textures-12555
+
+Audio Assets 
+"Battle of the Creek" Royalty Free Audio
+https://www.youtube.com/watch?v=p5GCEWBDwrc
+
+"Ambience, Market, Crowd, Street market"
+Soundly Free Assets 
+
+"Animals, Farm, Bird, Chickens"
+Soundly Free Assets

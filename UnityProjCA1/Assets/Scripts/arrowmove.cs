@@ -1,10 +1,10 @@
 using UnityEngine;
 
 //This script sets the speed of the projectile after being fired. 
-//The script is attached to the projectile object.
+//The script is attached to the projectile object. The projectile is tagged as the arrow.
 public class arrowmove : MonoBehaviour
 {
-   public float speed = 10f;
+   public float speed = 15f;  //speed of the projectile when fired.
 
    void Update()
    {
